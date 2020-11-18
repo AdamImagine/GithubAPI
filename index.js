@@ -34,7 +34,7 @@ function renderSearchResults(resultsList) {
     $('#results-list').html("");
     $('#results').text("Your results");
     resultsList.forEach(item =>{
-        $('#results-list').append(`<li><h3>${item.full_name}</h3>)
+        $('#results-list').append(`<li><h3>${item.full_name}</h3>
         <p><a href=${item.html_url}>${item.html_url}</a></p></li>`)
     });
 }
