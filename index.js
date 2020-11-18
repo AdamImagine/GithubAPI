@@ -26,7 +26,7 @@ function getSearchResults(userHandle) {
         throw new Error(response.statusText);
     })
     .then(responseJson => renderSearchResults(responseJson))
-    .catch(err =>alert(err));
+    .catch(err =>alert('User not found. Please try again.'));
 }
 
 function renderSearchResults(resultsList) {
